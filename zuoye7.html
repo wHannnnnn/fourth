@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="button" value="点击">
+<input type="button" value="点击">
+<input type="button" value="点击">
+<input type="button" value="点击">
+
+</body>
+<script>
+    var aBut=document.getElementsByTagName("input")
+
+
+
+for(var i=0;i<aBut.length;i++) {
+    aBut[i].onclick = function () {
+        if (aBut[i]==i) {
+            this.value = "呜呜"
+//                    aBut[1].value="嘻嘻"
+//                    aBut[2].value="嘻嘻"
+//                    aBut[3].value="嘻嘻"
+
+        }else{
+            this.value = "xiix"
+
+        }
+    }
+}
+
+
+</script>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div {
+            background-color: red;
+            width: 200px;
+            height: 200px;
+
+        }
+    </style>
+</head>
+<body>
+
+<!--案例:点击按钮显示和隐藏层-->
+<input type="button" value="隐藏">
+<div id="box"></div>
+</body>
+<script>
+    var onOff=true
+    var aBut=document.getElementsByTagName("input")
+    var aBox=document.getElementById("box")
+    aBut[0].onclick=function(){
+    if(onOff){
+        this.value="显示"
+            aBox.style.display="none"
+            }else{
+        this.value="隐藏"
+            aBox.style.display="block"
+            }
+        onOff=!onOff
+    }
+</script>
+</html>

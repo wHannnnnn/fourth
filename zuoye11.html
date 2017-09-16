@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!--<style>-->
+        <!--#cc{-->
+            <!--display: none;-->
+        <!--}-->
+    <!--</style>-->
+</head>
+<body>
+<input type="text" id="xx" value="设置">
+<div>
+<input type="radio" name="zz">男
+<input type="radio" name="zz">女<br>
+<input type="checkbox"/>吃
+<input type="checkbox"/>喝
+<input type="checkbox"/>
+    <select id="aaa">
+
+        <option value="">aa</option>
+        <option value="">zz</option>
+        <option value="">cc</option>
+    </select>
+    </div>
+</body>
+<script>
+    var aText=document.getElementById("xx")
+var aIn=document.getElementsByTagName("input");
+    var aSle=document.getElementById("aaa")
+var aOpt=document.getElementsByTagName("option")
+
+//   aText.onclick=function(){
+//    aIn.style.display="block"
+//
+//    }
+   aText.onclick=function(){
+       aIn[1].checked="checked"
+       aIn[3].checked="checked"
+       aOpt[2].selected="selected"
+   }
+</script>
+</html>

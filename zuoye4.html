@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="button" value="点击"> <a href="12">hahah</a>
+</body>
+<script>
+    var onOff=true
+    var aBut=document.getElementsByTagName("input")[0]
+    var aA=document.getElementsByTagName("a")[0]
+    aBut.onclick=function() {
+        if (onOff) {
+            aA.href = "11";
+            aA.innerHTML = "zzzzz"
+        }else{
+            aA.href = "12";
+            aA.innerHTML = "hahah"
+        }
+        onOff=!onOff
+    }
+</script>
+</html>
